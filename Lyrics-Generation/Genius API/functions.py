@@ -10,7 +10,7 @@ def upload_song_data(artista_name, max_retries=5):
     while retries < 5:  # Límite de reintentos
         genius = lyricsgenius.Genius(obtain_access_token())
         try:
-            artista = genius.search_artist(artista_name,max_songs=10)
+            artista = genius.search_artist(artista_name) # ,max_songs=10
             nuevas_filas = []
             for cancion in artista.songs:
                 fila = {
