@@ -2,5 +2,6 @@
 keys.json
 __pycache__/
 data/
-*\temp.ipynb
+*\temp*.ipynb
 garbage/
+gpt2_spa_local/
