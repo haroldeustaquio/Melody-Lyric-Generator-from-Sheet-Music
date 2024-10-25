@@ -5,3 +5,4 @@ data/
 *\temp*.ipynb
 garbage/
 gpt2_spa_local/
+trained_gpt2_spa_local/
