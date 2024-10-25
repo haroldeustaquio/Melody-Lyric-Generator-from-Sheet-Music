@@ -1,7 +1,7 @@
 .venv/
 keys.json
 __pycache__/
-data/
+data-midi/
 *\temp*.ipynb
 garbage/
 gpt2_spa_local/
