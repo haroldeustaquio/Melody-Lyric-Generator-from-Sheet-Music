@@ -18,11 +18,14 @@
 
 ## Architecture
 
-![Architecture](https://github.com/user-attachments/assets/f5565510-b8ad-48c9-80c1-8f62b8a65215)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f5565510-b8ad-48c9-80c1-8f62b8a65215" alt="Architecture">
+</p>
 
-<div align="center">
-    <em>Figure 1: Architecture of Lyrics Generation</em>
-</div>
+<p align="center">
+  <em>Figure 1: Architecture of Lyrics Generation</em>
+</p>
+
 
 ---
 
