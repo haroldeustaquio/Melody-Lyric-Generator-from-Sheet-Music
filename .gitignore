@@ -4,5 +4,4 @@ __pycache__/
 data-midi/
 *\temp*.ipynb
 garbage/
-gpt2_spa_local/
-trained_gpt2_spa_local/
+gpt2_model*
