@@ -16,8 +16,7 @@
 
 ## Architecture
 
-
-
+[In process]
 
 ## MAESTRO Dataset
 

@@ -61,8 +61,6 @@ GPT is a language model architecture that uses the *Transformers* approach. It w
 
 ### Diagram: GPT Architecture
 
-[In process...]
-
 <p align="center">
   <img src="https://github.com/user-attachments/assets/25ccedca-5493-4854-b859-563c6c37af61" alt="Architecture">
 </p>
@@ -266,6 +264,9 @@ The following graph illustrates the evolution of *Training Loss* for each stage 
 
 ### Metrics Analysis
 
+**Perplexity**
+
+[in process...]
 
 
 
@@ -284,3 +285,20 @@ To install the necessary packages for `Evaluation`, execute the following comman
 ```bash
 pip install transformers sentence-transformers nltk torch
 ```
+
+
+
+## References
+
+
+1. Obregón, J. and Carrera, B. (2020).  
+  **"Gpt2-small-spanish: Un modelo de lenguaje para generación de texto en español".**  
+  URL: [https://huggingface.co/daticfate/gpt2-small-spanish](https://huggingface.co/daticfate/gpt2-small-spanish)
+
+2. Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L., and Polosukhin, I. (2017).  
+  **"Attention is all you need".**  
+  En *Advances in Neural Information Processing Systems*, Vol. 30.
+
+3. Peter F. Brown, Vincent J. Della Pietra, Stephen A. Della Pietra, and Robert L. Mercer.  
+  **"A Statistical Approach to Machine Translation."**  
+  *Computational Linguistics*, 16(2):79-85, 1990.
