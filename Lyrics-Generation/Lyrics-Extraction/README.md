@@ -32,7 +32,6 @@
 ## Functions
 
 ### ``text_preprocessing.py``
-This module:
 - Cleans song lyrics by removing unnecessary elements such as metadata, punctuation, numbers, and stopwords.
 - Normalizes text by converting to lowercase and replacing accented characters.
 - Prepares lyrics for further processing, such as tokenization and emotional analysis.
@@ -41,7 +40,6 @@ This module:
 - ``clean_text(lyrics)``: Cleans and preprocesses the input lyrics, returning a normalized string without stopwords or extraneous content.
 
 ### `feelings_analysis.py`
-This module:
 - Reads a lexicon from a CSV file (`espaniol_NRC.csv`).
 - Analyzes the emotional content of a given text by matching words with the lexicon.
 
@@ -49,7 +47,6 @@ This module:
 - `feelings_in_text(text)`: Takes a string as input, calculates the top three emotions present in the text based on the lexicon, and returns them.
 
 ### `file_handling.py`
-This module:
 - Handles reading and writing JSON files.
 - Saves processed data as a CSV for persistent storage.
 
@@ -59,7 +56,6 @@ This module:
 - `save_as_csv(data)`: Appends new data to an existing CSV file (`filter_data.csv`) or creates it if it doesn’t exist.
 
 ### `extract_music.py`
-This module:
 - Retrieves song lyrics using the LyricsGenius API.
 - Cleans the lyrics text using `text_processing` (assumed to be implemented elsewhere).
 - Analyzes the emotional content of the lyrics using `feelings_analysis.py`.
