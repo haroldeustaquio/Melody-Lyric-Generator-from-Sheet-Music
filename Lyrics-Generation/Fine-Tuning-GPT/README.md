@@ -30,7 +30,7 @@
 </p>
 
 <p align="center">
-  <em>Figure 1: Architecture of training GPT-2</em>
+  <em>Figure 1: Architecture of Fine Tuning GPT-2</em>
 </p>
 
 
@@ -247,7 +247,7 @@ The following graph illustrates the evolution of *Training Loss* for each stage 
 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6e8e9f87-a6b5-4d47-b6a2-5fd412c3f2ea" alt="Architecture">
+  <img src="https://github.com/user-attachments/assets/9591923c-8259-46e9-8a7a-c915fab25fd2" alt="Architecture">
 </p>
 
 <p align="center">
@@ -264,9 +264,72 @@ The following graph illustrates the evolution of *Training Loss* for each stage 
 
 ### Metrics Analysis
 
-**Perplexity**
+#### Perplexity
 
-[in process...]
+- Perplexity decreases significantly in `Fine Tuning 3` and `Fine Tuning 4`, indicating a better model fit after more fine-tuning iterations.
+- `Fine Tuning 2` shows an increase in perplexity to 87.86, which could indicate overfitting or a mismatch in the training process.
+- In `Fine Tuning 3`, perplexity drops sharply to 42.92, demonstrating a substantial improvement in model adaptation.
+- `Fine Tuning 4` achieves the lowest perplexity of 36.79, highlighting the positive impact of the final iterations on the model's performance.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/442a38f5-1762-447c-bdec-c83ca1d3be89" alt="Architecture">
+</p>
+
+<p align="center">
+  <em>Figure 3: Perplexity by Step for each Fine-Tuning</em>
+</p>
+
+
+
+#### Distinct-2
+
+- The `Distinct-2` metric remains high in `Fine Tuning 1`, `Fine Tuning 3`, and `Fine Tuning 4`, indicating a consistent ability to generate diverse outputs across these phases.
+- A slight decrease in `Distinct-2` is observed in `Fine Tuning 2`, dropping to 0.98, which may reflect a temporary reduction in diversity during this phase.
+- In `Fine Tuning 3`, the `Distinct-2` value recovers to 0.99, demonstrating an improvement in output diversity after adjustments.
+- `Fine Tuning 4` sustains a high `Distinct-2` value of 0.99, consolidating the model's ability to generate diverse responses in the final phase.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/39709813-21b7-4ab3-81a7-a536e93661ff" alt="Architecture">
+</p>
+
+<p align="center">
+  <em>Figure 4: Distinct-2 by Step for each Fine-Tuning</em>
+</p>
+
+
+
+#### Lexical Diversity
+
+
+- The `Lexical Diversity` metric starts high at 0.99 in `Fine Tuning 1`, indicating a strong variety in generated outputs initially.
+- A progressive decrease is observed, with `Fine Tuning 2` dropping to 0.96 and reaching the lowest point of 0.92 in `Fine Tuning 3`, suggesting a reduction in diversity during these phases.
+- In `Fine Tuning 4`, the `Lexical Diversity` value recovers significantly to 0.99, demonstrating a restoration of the model's ability to produce varied outputs.
+- The overall trend indicates a temporary decline in diversity during intermediate phases, followed by a strong recovery in the final fine-tuning iteration.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6cf0aefa-5bf5-440d-a3d3-2d3b1a97df2e" alt="Architecture">
+</p>
+
+<p align="center">
+  <em>Figure 5: Lexical Diversity by Step for each Fine-Tuning</em>
+</p>
+
+
+
+#### Local Coherence
+
+- `Local Coherence` starts relatively low at 0.37 in `Fine Tuning 1`, indicating initial challenges in maintaining coherent outputs.
+- In `Fine Tuning 2`, there is a significant improvement, with `Local Coherence` peaking at 0.49, suggesting better contextual consistency.
+- A sharp decline occurs in `Fine Tuning 3`, where `Local Coherence` drops to 0.39, reflecting a potential reduction in the model's ability to maintain coherence.
+- `Fine Tuning 4` shows recovery with an increase to 0.45, demonstrating partial restoration of coherence in the final phase of fine-tuning.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3701a589-b93f-451f-a91c-17c41edc284c" alt="Architecture">
+</p>
+
+<p align="center">
+  <em>Figure 6: Local Coherence by Step for each Fine-Tuning</em>
+</p>
 
 
 

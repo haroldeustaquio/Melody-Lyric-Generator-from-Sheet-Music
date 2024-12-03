@@ -13,7 +13,7 @@
     - [extract_music.py](#extract_musicpy)
     - [main.py](#mainpy)
 - [Prerequisites](#prerequisites)
-- [Usage](#usage)
+- [Installation](#installation)
 ---
 
 ## Architecture
@@ -93,7 +93,7 @@ To install required Python packages, run:
 pip install lyricsgenius pandas
 ```
 
-## Usage
+## Installation
 1. Clone this repository and navigate to the project directory.
 
     ```bash
