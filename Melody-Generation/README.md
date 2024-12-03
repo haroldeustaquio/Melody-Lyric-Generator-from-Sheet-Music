@@ -141,16 +141,17 @@ This function:
 
 - **Root Mean Square Error (RMSE)**: Measures the average magnitude of error between the predicted and actual values, particularly useful for numeric features like `duration` and `step`. Lower RMSE values indicate more accurate predictions. It is calculated as:
 
-$$
+```math
 RMSE = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (y_i - \hat{y}_i)^2}
-$$
+```
 
 
 - **Coefficient of Determination (R²)**: Evaluates the proportion of variance in the actual values explained by the model, R² values close to 1 indicate the model captures the underlying patterns well. It is calculated as:
 
-$$
+
+```math
 R^2 = 1 - \frac{\sum_{i=1}^N (y_i - \hat{y}_i)^2}{\sum_{i=1}^N (y_i - \bar{y})^2}
-$$
+```
 
 
 ### Evaluation Process
