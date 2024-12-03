@@ -149,8 +149,9 @@ $$
 - **Coefficient of Determination (R²)**: Evaluates the proportion of variance in the actual values explained by the model, R² values close to 1 indicate the model captures the underlying patterns well. It is calculated as:
 
 $$
-R^2 = 1 - \frac{\sum_{i=1}^N (y_i - \hat{y}_i)^2}{\\sum_{i=1}^N (y_i - \bar{y})^2}
+R^2 = 1 - \frac{\sum_{i=1}^N (y_i - \hat{y}_i)^2}{\sum_{i=1}^N (y_i - \bar{y})^2}
 $$
+
 
 ### Evaluation Process
 
